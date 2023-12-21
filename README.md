@@ -84,12 +84,12 @@ mutex의 lock을 이용하여 알람 시간 설정 시 임계구역 문제 방�
 
 회로도<br>
 ![Alt text](image/image_4.png)
-GPIO 핀 상세<br>
-스피커 - GPIO 16<br>
-서보 모터 - GPIO 13 (PWM 1)<br>
-숫자 키 패드 - SCL = GPIO 21, SDA = GPIO 20<br>
-bluetooth - TXD = GPIO 1, RXD = GPIO 0 (UART)<br>
-RTC - SDA = GPIO 2, SDL = GPIO 3 (I2C)<br>
+GPIO 핀 상세
+- 스피커 - GPIO 16
+- 서보 모터 - GPIO 13 (PWM 1)
+- 숫자 키 패드 - SCL = GPIO 21, SDA = GPIO 20
+- bluetooth - TXD = GPIO 1, RXD = GPIO 0 (UART)
+- RTC - SDA = GPIO 2, SDL = GPIO 3 (I2C)
 
 프로그램 흐름도<br>
 각 모듈마다 하나의 쓰레드 할당. <br>
