@@ -150,7 +150,8 @@ void *th_keypad()
             for (int i = 0; i < 4; i++)
             {
                 pw[i] = rand() % 8 + 1;
-                if(pw[i]==2) pw[i]++;
+                //키 패드의 2번 숫자가 인식이 잘 안되어서 편의를 위해 건너뜀.
+                if(pw[i]==2) pw[i]++;   
             }
 
             // 비밀번호를 입력받는 loop
